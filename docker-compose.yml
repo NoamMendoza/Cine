@@ -9,6 +9,8 @@ services:
       - "8080:8080"
     depends_on:
       - peliculas
+    networks:
+      - cine-network
 
   peliculas:
     build:
@@ -20,6 +22,8 @@ services:
       - SPRING_DATA_MONGODB_URI=mongodb://mongo:27017/CinePeliculas
     depends_on:
       - mongo
+    networks:
+      - cine-network
 
   mongo:
     image: mongo:6.0
@@ -28,6 +32,12 @@ services:
       - "27017:27017"
     volumes:
       - mongo-data:/data/db
+    networks:
+      - cine-network
 
 volumes:
   mongo-data:
+
+networks:
+  cine-network:
+    driver: bridge
