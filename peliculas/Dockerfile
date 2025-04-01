@@ -1,5 +1,5 @@
 # Usa una imagen base de OpenJDK en Ubuntu
-FROM openjdk:17-jdk-slim
+FROM openjdk:21-jdk-slim
 
 # Establece el directorio de trabajo
 WORKDIR /app
