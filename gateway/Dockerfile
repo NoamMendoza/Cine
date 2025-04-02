@@ -1,6 +1,9 @@
 # Usa una imagen base de OpenJDK en Ubuntu
 FROM openjdk:21-jdk-slim
 
+#Instala curl
+RUN apt-get update && apt-get install -y curl
+
 # Establece el directorio de trabajo
 WORKDIR /app
 
