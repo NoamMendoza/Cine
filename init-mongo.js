@@ -5,7 +5,7 @@ db.Peliculas.insertMany([
         id: 1,
         title: 'Sexo La Pelicula',
         description: 'La pelicula del doctor sexo',
-        image: 'https://static.wikia.nocookie.net/reinoanimalia/images/a/ae/Caracal.png/revision/latest?cb=20140401201808&path-prefix=es',
+        image: 'https://http2.mlstatic.com/D_NQ_NP_933762-CBT80264083462_112024-O.webp',
         showtimes: [ '11:00AM', '10:00PM' ]
       },
       {
