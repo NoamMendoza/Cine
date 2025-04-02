@@ -16,4 +16,4 @@ db.Peliculas.insertMany([
         image: 'https://preview.redd.it/zozlzva328291.jpg?width=640&crop=smart&auto=webp&s=13f4f13bfa6e541308b77ededcd134d526d29b5b',
         showtimes: [ '12:00AM', '09:00PM' ]
       }
-    ])
+    ]);
