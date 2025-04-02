@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gateway.gateway.GatewayApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-04-01T21:37:28.814Z" hostname="DESKTOP-H8D8CUG" time="0.508">
+<testsuite name="com.gateway.gateway.GatewayApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-04-02T04:42:17.868Z" hostname="DESKTOP-H8D8CUG" time="0.438">
   <properties/>
-  <testcase name="contextLoads()" classname="com.gateway.gateway.GatewayApplicationTests" time="0.508"/>
-  <system-out><![CDATA[15:37:23.621 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.gateway.gateway.GatewayApplicationTests]: GatewayApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-15:37:23.693 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.gateway.gateway.GatewayApplication for test class com.gateway.gateway.GatewayApplicationTests
+  <testcase name="contextLoads()" classname="com.gateway.gateway.GatewayApplicationTests" time="0.438"/>
+  <system-out><![CDATA[22:42:12.672 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.gateway.gateway.GatewayApplicationTests]: GatewayApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:42:12.748 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.gateway.gateway.GatewayApplication for test class com.gateway.gateway.GatewayApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -11,31 +11,37 @@
  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
   '  |____| .__|_| |_|_| |_\__, | / / / /
  =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v3.2.3)
 
-2025-04-01T15:37:25.037-06:00  INFO 24952 --- [gateway] [    Test worker] c.g.gateway.GatewayApplicationTests      : Starting GatewayApplicationTests using Java 21.0.5 with PID 24952 (started by Noam in C:\Users\Noam\Downloads\Cine\gateway)
-2025-04-01T15:37:25.038-06:00  INFO 24952 --- [gateway] [    Test worker] c.g.gateway.GatewayApplicationTests      : No active profile set, falling back to 1 default profile: "default"
-2025-04-01T15:37:25.766-06:00  INFO 24952 --- [gateway] [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=71064d4b-7736-33c3-8d9a-021ae851c81e
-2025-04-01T15:37:27.110-06:00  INFO 24952 --- [gateway] [    Test worker] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2025-04-01T15:37:27.364-06:00  INFO 24952 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
-2025-04-01T15:37:27.365-06:00  INFO 24952 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
-2025-04-01T15:37:27.365-06:00  INFO 24952 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
-2025-04-01T15:37:27.365-06:00  INFO 24952 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
-2025-04-01T15:37:27.365-06:00  INFO 24952 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
-2025-04-01T15:37:27.365-06:00  INFO 24952 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
-2025-04-01T15:37:27.365-06:00  INFO 24952 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
-2025-04-01T15:37:27.365-06:00  INFO 24952 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
-2025-04-01T15:37:27.365-06:00  INFO 24952 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
-2025-04-01T15:37:27.365-06:00  INFO 24952 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
-2025-04-01T15:37:27.365-06:00  INFO 24952 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
-2025-04-01T15:37:27.365-06:00  INFO 24952 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2025-04-01T15:37:27.365-06:00  INFO 24952 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
-2025-04-01T15:37:27.365-06:00  INFO 24952 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2025-04-01T15:37:28.532-06:00  INFO 24952 --- [gateway] [    Test worker] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2025-04-01T15:37:28.566-06:00  INFO 24952 --- [gateway] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-04-01T15:37:28.809-06:00  INFO 24952 --- [gateway] [    Test worker] c.g.gateway.GatewayApplicationTests      : Started GatewayApplicationTests in 4.988 seconds (process running for 5.963)
+ :: Spring Boot ::                (v3.4.4)
+
+2025-04-01T22:42:14.173-06:00  INFO 23424 --- [gateway] [    Test worker] c.g.gateway.GatewayApplicationTests      : Starting GatewayApplicationTests using Java 21.0.5 with PID 23424 (started by Noam in C:\Users\Noam\Downloads\Cine\gateway)
+2025-04-01T22:42:14.175-06:00  INFO 23424 --- [gateway] [    Test worker] c.g.gateway.GatewayApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-04-01T22:42:14.864-06:00  INFO 23424 --- [gateway] [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4e0a7103-4953-3bd8-9ebc-cb2b35aedbc8
+2025-04-01T22:42:16.155-06:00  INFO 23424 --- [gateway] [    Test worker] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-04-01T22:42:16.300-06:00 DEBUG 23424 --- [gateway] [    Test worker] o.s.c.gateway.config.GatewayProperties   : Routes supplied from Gateway Properties: [RouteDefinition{id='peliculas-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/peliculas/**}}], filters=[], uri=http://localhost:8081, order=0, metadata={}, enabled=true}]
+2025-04-01T22:42:16.490-06:00  INFO 23424 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-04-01T22:42:16.490-06:00  INFO 23424 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-04-01T22:42:16.490-06:00  INFO 23424 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-04-01T22:42:16.490-06:00  INFO 23424 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-04-01T22:42:16.490-06:00  INFO 23424 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-04-01T22:42:16.490-06:00  INFO 23424 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-04-01T22:42:16.490-06:00  INFO 23424 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-04-01T22:42:16.490-06:00  INFO 23424 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-04-01T22:42:16.490-06:00  INFO 23424 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-04-01T22:42:16.490-06:00  INFO 23424 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-04-01T22:42:16.490-06:00  INFO 23424 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-04-01T22:42:16.490-06:00  INFO 23424 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-04-01T22:42:16.490-06:00  INFO 23424 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-04-01T22:42:16.491-06:00  INFO 23424 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-04-01T22:42:17.612-06:00  INFO 23424 --- [gateway] [    Test worker] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-04-01T22:42:17.646-06:00  INFO 23424 --- [gateway] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-04-01T22:42:17.840-06:00 DEBUG 23424 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition peliculas-service applying {_genkey_0=/peliculas/**} to Path
+2025-04-01T22:42:17.856-06:00 DEBUG 23424 --- [gateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: peliculas-service
+2025-04-01T22:42:17.862-06:00 DEBUG 23424 --- [gateway] [    Test worker] o.s.c.g.filter.GatewayMetricsFilter      : New routes count: 1
+2025-04-01T22:42:17.864-06:00  INFO 23424 --- [gateway] [    Test worker] c.g.gateway.GatewayApplicationTests      : Started GatewayApplicationTests in 4.935 seconds (process running for 5.79)
 ]]></system-out>
-  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\Noam\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.12\be4984cb6fd1ef1d11f218a648889dfda44b8a15\byte-buddy-agent-1.14.12.jar)
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\Noam\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.15.11\a38b16385e867f59a641330f0362ebe742788ed8\byte-buddy-agent-1.15.11.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
 WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
 WARNING: Dynamic loading of agents will be disallowed by default in a future release
