@@ -4,6 +4,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import com.alta.alta.models.AltaEstrenos;
 
-public interface AltaEstrenosRepository extends MongoRepository<AltaEstrenos, Long> {
+public interface AltaEstrenosRepository extends MongoRepository<AltaEstrenos, String> {
 	
 }
