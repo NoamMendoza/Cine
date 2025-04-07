@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineRico - Tu cine generico favorito</title>
-    <!--<link rel="stylesheet" th:href="@{/css/index.css}"> -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,12 +16,6 @@
             background-color: #ff4d4d;
             padding: 20px;
             text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: flex-start;
-            gap: 10px;
-            margin-top: 10px;
         }
         .container {
             max-width: 1200px;
@@ -53,33 +46,16 @@
             border-radius: 4px;
             cursor: pointer;
             text-decoration: none;
-            
-        }
-        a.btn:hover {
-            background-color: #ff6666;
-            color: black;
-            transform: scale(1.05);
-            transition: all 0.3s ease;
-        }
-        footer{
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 20pxs;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Cinerico - Tu cine generico favorito</h1>
+        <h1>CineRico - Tu cine generico favorito</h1>
         <nav>
-            <a href="/" class="btn">Inicio</a>
-            <a href="/peliculas" class="btn">Cartelera</a>
-            <a href="/estrenos" class="btn">Próximos estrenos</a>
+            <a href="#" class="btn">Cartelera</a>
+            <a href="#" class="btn">Próximos estrenos</a>
             <a href="#" class="btn">Promociones</a>
-            <a href="/altaEstrenos/form" class="btn">Agregar Estreno</a>
-            <a href="/altaPeliculas/form" class="btn">Agregar Pelicula</a>
         </nav>
     </header>
 
@@ -87,20 +63,14 @@
         <h2>Películas en cartelera</h2>
         <div class="movie-grid">
             <!-- Iteración Thymeleaf para mostrar películas dinámicamente -->
-            <div class="movie-card" th:each="movie : ${movies}">
-                <img th:src="${movie.image}" th:alt="${movie.title}">
+            <div class="movie-card" th:each="movie : ${estrenos}">
+                
                 <h3 th:text="${movie.title}">Título de la película</h3>
-                <p th:text="'Horarios: ' + ${movie.showtimes}">Horarios</p>
+                <p th:text="${movie.description}">Descripción de la película</p>
+                
                 <a href="#" class="btn">Comprar entradas</a>
             </div>
         </div>
     </div>
-    <footer>
-        <div class="footer-container">
-            <p>Contacto: correogenerico@dominiogenerico.com</p>
-            <p>Telefono: t313f0n0</p>
-            <p>Direccion: Direccion Falsa</p>
-        </div>
-    </footer>
 </body>
 </html>

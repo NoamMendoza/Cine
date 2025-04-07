@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Estrenos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #555;
+        }
+        th {
+            background-color: #444;
+        }
+        .success-message {
+            color: #4CAF50;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Estrenos</h1>
+        <p class="success-message">¡El estreno se ha subido correctamente!</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Descripción</th>
+                    <th>Fecha de Estreno</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="estreno : ${altaEstrenos}">
+                    <td th:text="${estreno.title}">Título</td>
+                    <td th:text="${estreno.description}">Descripción</td>
+                    <td th:text="${estreno.releaseDate}">Fecha de Estreno</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

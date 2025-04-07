@@ -2,15 +2,25 @@ package com.alta.alta.service;
 
 import java.util.List;
 
-import com.alta.alta.models.AltaEstrenos;
-import com.alta.alta.repositories.AltaEstrenosRepository;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.stereotype.Service;
 
+import com.alta.alta.models.AltaEstrenos;
+
+@Service
 public class AltaEstrenosService {
-    private final AltaEstrenosRepository altaRepository;
-    public AltaEstrenosService(AltaEstrenosRepository altaRepository) {
-        this.altaRepository = altaRepository;
+    private final MongoTemplate estrenosMongoTemplate;
+
+    public AltaEstrenosService(@Qualifier("estrenosMongoTemplate") MongoTemplate estrenosMongoTemplate) {
+        this.estrenosMongoTemplate = estrenosMongoTemplate;
     }
+
     public List<AltaEstrenos> getAllEstrenos() {
-        return altaRepository.findAll();
+        return estrenosMongoTemplate.findAll(AltaEstrenos.class);
+    }
+
+    public void saveEstreno(AltaEstrenos estreno) {
+        estrenosMongoTemplate.save(estreno);
     }
 }
